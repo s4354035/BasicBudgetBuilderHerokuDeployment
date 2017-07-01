@@ -1,0 +1,13 @@
+<div class="auto-debit-panel">
+    <div ui-grid="autoDebitGridOptions" ui-grid-pagination ui-grid-selection class="grid"></div>
+    <div class="edit-bar">
+        <button class="btn btn-success" ng-click="createAutoDebit()">New</button>
+        <button class="btn btn-success" ng-click="editAutoDebit()">Edit</button>
+        <button class="btn btn-danger" ng-click="deleteAutoDebit()">Delete</button>
+    </div>
+</div>
+<div class="budget-side-panel">
+    <div class="floating-box" ng-repeat="budget in allBudgets">
+        <budget name = "budget"></budget>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+/* Custom dialog/modal headers */
+.dialog-mobile-3{
+	-ms-transform: scale(1.5, 2) translate(-50%, 15%); /* IE 9 */
+	-webkit-transform: scale(1.5, 2) translate(-50%, 15%); /* Safari */
+	transform: scale(1.5, 2) translate(-50%, 15%) ;
+}
+
+.dialog-header-error { background-color: #d2322d;  font-size: 200% !important;}
+.dialog-header-wait { background-color: #428bca; }
+.dialog-header-notify { background-color: #eeeeee; font-size: 200% !important;}
+.dialog-header-confirm { background-color: #333333; }
+.dialog-header-error span, .dialog-header-error h4,
+.dialog-header-wait span, .dialog-header-wait h4,
+.dialog-header-confirm span, .dialog-header-confirm h4 { color: #ffffff; }

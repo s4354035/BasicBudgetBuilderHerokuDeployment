@@ -1,0 +1,56 @@
+.background{
+    width: 100%;
+    height: 100%;
+}
+.login-title{
+    float: left;
+    margin: 80px 16px;
+    width:800px;
+    color: white;
+}
+.login-panel{
+    float: left;
+    margin: 100px;
+    padding: 16px;
+    width: 800px;
+    background-color: white;
+    color: var(--text-colour-dark);
+}
+
+.login-entry{
+    float:left;
+    padding-top:32px;
+    width: 100%;
+}
+.form-text{
+    float:left;
+    width: 100%;
+    clear:both;
+}
+.forgot-link{
+    float:left;
+    text-align: right;
+    width: 100%;
+    padding-bottom: 16px;
+}
+.login-error-message{
+    float:left;
+    width: 100%;
+    height: 214px;
+}
+.login-button{
+    float:left;
+    text-align: right;
+    width: 100%;
+}
+input[type="text"]{
+    font-size: 100%;
+    height: 80px;
+}
+input[type="password"]{
+    font-size: 100%;
+    height: 80px;
+}
+.btn {
+    font-size: 100% !important;
+}

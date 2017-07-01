@@ -1,0 +1,13 @@
+<div class="debit-panel">
+    <div ui-grid="mainGridOptions" ui-grid-pagination ui-grid-selection class="grid"></div>
+    <div class="edit-bar">
+        <button class="btn btn-success" ng-click="createDebit()">New</button>
+        <button class="btn btn-success" ng-click="editDebit()">Edit</button>
+        <button class="btn btn-danger" ng-click="deleteDebit()">Delete</button>
+    </div>
+</div>
+<div class="budget-side-panel">
+    <div class="floating-box" ng-repeat="budget in allBudgets">
+        <budget name = "budget"></budget>
+    </div>
+</div>

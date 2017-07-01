@@ -1,0 +1,40 @@
+<form class="create-edit-panel" role="form" ng-submit="createEditBudget()">
+    <h3 ng-show="selectedPresent">Edit Budget</h3>
+    <h3 ng-show="!selectedPresent">Create Budget</h3>
+    <div class="create-edit-entry">
+        <p>Category Name: <em class="red">{{CEB_category_name_error}}</em></p>
+        <input class="form-control" type="text" ng-model="CEB_category_name"/>
+    </div>
+    <div class="create-edit-entry">
+        <div class="colour-selection">Category Colour: <input type="color" ng-model="CEB_category_colour"/><em class="red">{{CEB_category_colour_error}}</em></div>
+    </div>
+    <div class="create-edit-entry">
+        <p>Description:</p>
+        <input type="text" class="form-control" ng-model="CEB_description"/>
+    </div>
+    <div class="create-edit-entry">
+        <p>Amount: <em class="red">{{CEB_amount_error}}</em></p>
+        <input type="number" min="0.01" step="0.01" class="form-control" ng-model="CEB_amount"/>
+    </div>
+    <div class="create-edit-entry">
+        <p>Interval: <em class="red">{{CEB_interval_error}}</em></p>
+        <select class="form-control" ng-model="CEB_interval">
+            <option value="WEEK">Weekly</option>
+            <option value="FORTNIGHT"> Fortnightly</option>
+            <option value="MONTH"> Monthly</option>
+            <option value="QUARTER"> Quarterly</option>
+            <option value="YEAR"> Yearly</option>
+        </select>{{CEB_interval_error}}
+    </div>
+    <div class="create-edit-entry">
+        <p>Effective Date: <em class="red">{{CEB_date_error}}</em></p>
+        <input type="date" class="form-control" ng-model="CEB_date"/>
+    </div>
+    <div class="general-error-message">
+        <div class="alert alert-danger" ng-show="error">{{CEB_general_error}}</div>
+    </div>
+    <div class="create-edit-buttons">
+        <button type="submit"  class="btn btn-success">Update</button>
+        <button class="btn btn-danger" ng-click="cancelBudget()">Cancel</button>
+    </div>
+</form>

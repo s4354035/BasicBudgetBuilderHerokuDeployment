@@ -1,0 +1,186 @@
+.summary-panel{
+    float:left;
+    margin: 1px 0 1px 0;
+    width: 362px;
+    text-align: center;
+}
+.summary-panel div p {
+    margin: 0;
+    padding: 0;
+}
+.budget-summary{
+    float:left;
+    margin: 1px;
+    width: 360px;
+    padding-top: 4px;
+    height: 28px;
+    color: white;
+    background-color: var(--main-green-dark);
+}
+.total-budget{
+    float:left;
+    padding-left: 6px;
+    width: 180px;
+    text-align: left;
+}
+.remaining-budget{
+    float:left;
+    padding-left: 6px;
+    width: 180px;
+    text-align: left;
+}
+.remainder-panel{
+    float:left;
+    margin: 1px 1px 0 1px;
+    width: 118px;
+    padding-top: 4px;
+    height: 70px;
+    color: white;
+    background-color: var(--main-green-dark);
+}
+.remainder-panel-center{
+    float:left;
+    margin: 1px 1px 0 1px;
+    width: 120px;
+    padding-top: 4px;
+    height: 70px;
+    color: white;
+    background-color: var(--main-green-dark);
+}
+.interval-nav{
+    float:left;
+    width: 360px;
+    margin: 1px 1px 0 1px;
+    padding-top: 2px;
+    background-color: var(--main-green-dark);
+    text-align: center;
+}
+.interval-nav-tab-left{
+    float:left;
+    margin: 0 1px 2px 2px;
+    width: 69px;
+    padding-top: 2px;
+    height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.interval-nav-tab-left:hover, .interval-nav-tab-left.active{
+    margin: 0 1px 0 2px;
+    width: 69px;
+    height: 26px;
+    background-color: white;
+    color: var(--text-colour-dark);
+    text-decoration: none;
+}
+.interval-nav-tab-inner{
+    float:left;
+    margin: 0 1px 2px 1px;
+    width: 70px;
+    padding-top: 2px;
+    height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.interval-nav-tab-inner:hover, .interval-nav-tab-inner.active{
+    margin: 0 1px 0 1px;
+    width: 70px;
+    height: 26px;
+    background-color: white;
+    color: var(--text-colour-dark);
+    text-decoration: none;
+}
+.interval-nav-tab-right{
+    float:left;
+    margin: 0 2px 2px 1px;
+    width: 69px;
+    padding-top: 2px;
+    height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.interval-nav-tab-right:hover, .interval-nav-tab-right.active{
+    margin: 0 2px 0 1px;
+    width: 69px;
+    height: 26px;
+    background-color: white;
+    color: var(--text-colour-dark);
+    text-decoration: none;
+}
+.graph-panel-inner{
+    float:left;
+    margin: 0 2px 0 2px;
+    padding: 16px;
+    width: 356px;
+    height: calc(100vh - 306px);
+    min-height: 200px;
+    color: var(--text-colour-dark);
+    background-color: white;
+    display: table-cell;
+    vertical-align: middle;
+    overflow: auto;
+}
+.graph-panel{
+    float:left;
+    margin: 0 1px 0 1px;
+    width: 360px;
+    background-color: var(--main-green-dark);
+}
+.graph-nav{
+    float:left;
+    margin: 0 1px 1px 1px;
+    width: 360px;
+    background-color: var(--main-green-dark);
+    text-align: center;
+}
+.graph-nav-tab-left{
+    float:left;
+    margin: 2px 1px 2px 2px;
+    width: 117px;
+    height: 24px;
+    color: white;
+
+    text-decoration: none;
+}
+.graph-nav-tab-left:hover, .graph-nav-tab-left.active{
+    margin: 0 1px 2px 2px;
+    width: 117px;
+    height: 26px;
+    padding-top: 2px;
+    background-color: white;
+    color: var(--text-colour-dark);
+    text-decoration: none;
+}
+.graph-nav-tab-inner{
+    float:left;
+    margin: 2px 1px 2px 1px;
+    width: 118px;
+    height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.graph-nav-tab-inner:hover, .graph-nav-tab-inner.active{
+    margin: 0 1px 2px 1px;
+    width: 118px;
+    height: 26px;
+    padding-top: 2px;
+    color: var(--text-colour-dark);
+    background-color: white;
+    text-decoration: none;
+}
+.graph-nav-tab-right{
+    float:left;
+    margin: 2px 2px 0 1px;
+    width: 117px;
+    height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.graph-nav-tab-right:hover, .graph-nav-tab-right.active{
+    margin: 0 2px 0 1px;
+    width: 117px;
+    height: 26px;
+    padding-top: 2px;
+    background-color: white;
+    color: var(--text-colour-dark);
+    text-decoration: none;
+}

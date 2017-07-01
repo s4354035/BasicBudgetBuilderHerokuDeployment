@@ -1,0 +1,27 @@
+<link href="css/desktop/update.css" rel="stylesheet">
+<div class="header">Basic Budget Builder</div>
+<div class="body" ng-controller="updatePasswordController" sec:authorize="hasAuthority('CHANGE_PASSWORD_PRIVILEGE')">
+    <form class="update-panel" role="form" ng-submit="update()">
+        <h3>Update</h3>
+        <div class="update-entry">
+            <p>New Password:<em class="red">{{update_password_error}}</em></p>
+            <input class="form-control" type="password" placeholder="Password" ng-model="password"/>
+        </div>
+        <div class="update-entry">
+            <p>Confirm Password:<em class="red">{{update_confirm_password_error}}</em></p>
+            <input class="form-control" type="password" placeholder="Confirm Password" ng-model="confirmPassword"/>
+        </div>
+        <div class="general-error">
+            <div class="alert alert-danger" ng-show="error">
+                {{update_general_error}}
+            </div>
+            <div class="alert alert-success" ng-show="success">
+                {{update_success_message}}
+            </div>
+        </div>
+        <div class="update-button">
+            <button type="submit" class="btn btn-success">Update</button>
+        </div>
+    </form>
+</div>
+<div class="footer">INFS3202 Group Project</div>

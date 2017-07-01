@@ -1,0 +1,26 @@
+<div class="background">
+    <div class="login-title">
+        <h1>Basic Budget Builder</h1>
+        <h3>Building a stable finance</h3>
+    </div>
+    <form class="login-panel" role="form" ng-submit="login()">
+        <h3>Login</h3>
+        <div class="login-entry">
+            <input class="form-control" type="text" placeholder="user@example.com" ng-model="credentials.username"/>
+        </div>
+        <div class="login-entry">
+            <input class="form-control" type="password" placeholder="Password" ng-model="credentials.password"/>
+        </div>
+        <div class="forgot-link">
+            <a ui-sref="forgot_password" ui-sref-active="active">Forgot Password?</a>
+        </div>
+        <div class="login-error-message">
+            <div class="alert alert-danger" ng-show="error">
+                There was a problem logging in. Please try again.
+            </div>
+        </div>
+        <div class="login-button">
+            <button type="submit"  class="btn btn-xl btn-success">Login</button>
+        </div>
+    </form>
+</div>

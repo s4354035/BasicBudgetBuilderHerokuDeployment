@@ -1,0 +1,24 @@
+<nav>
+    <form class="navbar-form navbar-right" ng-controller="fullTextSearchController" role="form" ng-submit="search()">
+        <div class="input-group">
+            <input type="text" class="form-control" ng-model="searchText" placeholder="Search">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                    <span class="search-icon"></span>
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="nav-links">
+        <a class="active" ui-sref="home.budget">Budget</a>
+        <a ui-sref="home.debit">Debit</a>
+        <a ui-sref="home.autoDebit">Fixed Cost</a>
+        <a ui-sref="home.statistics">Statistics</a>
+    </div>
+</nav>
+<div class="main-panel">
+    <ui-view></ui-view>
+</div>
+<div class="stat-side-panel" ng-include="'mobile/remainders.html'"></div>
+
+

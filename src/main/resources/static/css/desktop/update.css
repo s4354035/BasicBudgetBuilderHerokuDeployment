@@ -1,0 +1,71 @@
+:root{
+    --main-green-light:rgb(220,240,230);
+    --main-green-dark:rgb(111,190,155);
+    --text-colour-dark:rgb(50,111,85);
+    --header-footer-light:rgb(210,210,210);
+    --header-footer-dark:rgb(50,50,50);
+}
+.header{
+    overflow: hidden;
+    height: 42px;
+    background-color: var(--header-footer-dark);
+    text-align: left;
+    color: var(--header-footer-light);
+    padding: 14px 0 0 16px;
+}
+.footer{
+    clear: both;
+    position: relative;
+    height: 32px;
+    margin-top: -22px;
+    padding-top: 10px;
+    background-color: var(--header-footer-dark);
+    text-align: center;
+    color: var(--header-footer-light);
+}
+body{
+    margin:0;
+    background-color: var(--main-green-dark);
+    height:100vh;
+}
+h3{
+    margin:0;
+    color: var(--text-colour-dark);
+    float:left;
+    width: 268px;
+}
+.red{
+    color:#ff0000;
+}
+.update-panel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    background-color: white;
+}
+.update-entry{
+    float:left;
+    clear: both;
+    padding-top:32px;
+    width: 268px;
+}
+.general-error{
+    clear: both;
+    float:left;
+    margin-top: 16px;
+    width: 268px;
+    height: 80px;
+}
+.update-button{
+    clear: both;
+    float: right;
+    text-align: right;
+    margin-top: 16px;
+    width: 268px;
+}
+.body{
+    background-color: var(--main-green-dark);
+    height:calc(100vh - 52px);
+}

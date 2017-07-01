@@ -1,0 +1,44 @@
+<div ng-controller="statisticsController">
+    <div class="interval-nav">
+        <a class="interval-nav-tab-left active" ng-click="intervalSelect('WEEK')">Week</a>
+        <a class="interval-nav-tab-inner" ng-click="intervalSelect('FORTNIGHT')">Fortnight</a>
+        <a class="interval-nav-tab-inner" ng-click="intervalSelect('MONTH')">Month</a>
+        <a class="interval-nav-tab-inner" ng-click="intervalSelect('QUARTER')">Quarter</a>
+        <a class="interval-nav-tab-right" ng-click="intervalSelect('YEAR')">Year</a>
+    </div>
+    <div class="graph-panel">
+        <div class="graph-panel-inner">
+            <canvas ng-show="pie_show" id="pie" width="950" height="950" class="chart chart-pie"
+                    chart-data="data"
+                    chart-labels="labels"
+                    chart-series="series"
+                    chart-options="resizeOptions"
+                    chart-dataset-override="dataSetOverride">
+            </canvas>
+            <canvas ng-show="line_show" id="line" width="950" height="950" class="chart chart-line"
+                    chart-data="lineData"
+                    chart-labels="lineLabels"
+                    chart-series="lineSeries"
+                    chart-options="resizeOptions"
+                    chart-dataset-override="lineDataSetOverride">
+            </canvas>
+            <canvas ng-show="pair_show" id="bar" width="950" height="950" class="chart chart-bar"
+                    chart-data="data"
+                    chart-labels="labels"
+                    chart-series="series"
+                    chart-options="resizeOptions"
+                    chart-dataset-override="dataSetOverride">
+            </canvas>
+        </div>
+    </div>
+    <div class="graph-nav">
+        <a class="graph-nav-tab-left active" ng-click="graphSelect('PIE')">Pie</a>
+        <a class="graph-nav-tab-inner" ng-click="graphSelect('LINE')">Line</a>
+        <a class="graph-nav-tab-right" ng-click="graphSelect('PAIR')">Pair</a>
+    </div>
+    <div class="budget-side-panel">
+        <div class="floating-box" ng-repeat="budget in allBudgets">
+            <budget-mobile name = "budget"></budget-mobile>
+        </div>
+    </div>
+</div>

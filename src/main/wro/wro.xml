@@ -1,0 +1,17 @@
+<!--Spring Boot auto-gnenerated xml for wro4j-->
+<groups xmlns="http://www.isdc.ro/wro">
+    <group name="angular-bootstrap">
+        <css>webjar:bootstrap/@bootstrap.version@/less/bootstrap.less</css>
+        <css>file:@project.basedir@/src/main/wro/main.less</css>
+        <css>webjar:bootstrap/@bootstrap.version@/css/bootstrap.css"></css>
+        <js>webjar:jquery/@jquery.version@/jquery.min.js</js>
+        <js>webjar:angularjs/@angularjs.version@/angular.min.js</js>
+        <js>webjar:angularjs/@angularjs.version@/angular-route.min.js</js>
+        <js>webjar:angularjs/@angularjs.version@/angular-cookies.min.js</js>
+        <js>webjar:angular-ui-router/@angularuirouter.version@/angular-ui-router.js</js>
+        <js>webjar:chartjs/@chartjs.version@/Chart.min.js</js>
+        <js>webjar:angular-chart.js/@angularChart.version@/angular-chart.min.js</js>
+        <js>webjar:angular-translate/@angularTranslate.version@/angular-translate.js</js>
+        <js>webjar:kendo-ui-core/@kendoui.version@/kendo.ui.core.js</js>
+    </group>
+</groups>

@@ -1,0 +1,28 @@
+.debit-panel, .auto-debit-panel{
+    float: left;
+    padding: 5px 0 0 5px;
+    width: calc(100% - 166px);
+    height: calc(100vh - 122px);
+}
+.edit-bar{
+    clear: both;
+    float: left;
+    text-align: right;
+    height:36px;
+    width: 100%;
+    min-width: 180px;
+    padding: 5px 0 5px;
+}
+.budget-side-panel{
+    float: right;
+    width: 166px;
+    height: calc(100vh - 122px);
+    overflow: scroll;
+}
+.grid {
+    height:calc(100vh - 170px);
+    min-width: 180px;
+    min-height: 250px;
+    background-color: #ffffff;
+
+}

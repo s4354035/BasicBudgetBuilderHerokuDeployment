@@ -1,0 +1,36 @@
+<form class="create-edit-panel" role="form" ng-submit="createEditAutoDebit()">
+    <h3 ng-show="selectedPresent">Edit Fixed Cost</h3>
+    <h3 ng-show="!selectedPresent">Create Fixed Cost</h3>
+
+    <div class="create-edit-entry">
+        <p>Category:</p>
+        <select class="form-control" data-ng-options= "sel.categoryName for sel in allBudgets"
+                 data-ng-model="sel">
+        </select>
+    </div>
+    <div class="create-edit-entry">
+        <p>Amount: <em class="red">{{CEA_amount_error}}</em></p>
+        <input type="number" min="0.01" step="0.01" class="form-control" ng-model="CEA_amount"/>
+    </div>
+    <div class="create-edit-entry">
+        <p>Description:</p>
+        <input type="text" class="form-control" ng-model="CEA_description"/>
+    </div>
+    <div class="create-edit-entry">
+        <p>Interval: <em class="red">{{CEA_interval_error}}</em></p>
+        <select  class="form-control" ng-model="CEA_interval">
+            <option value="WEEK">Weekly</option>
+            <option value="FORTNIGHT"> Fortnightly</option>
+            <option value="MONTH"> Monthly</option>
+            <option value="QUARTER"> Quarterly</option>
+            <option value="YEAR"> Yearly</option>
+        </select>
+    </div>
+    <div class="general-error-message">
+        <div class="alert alert-danger" ng-show="error">{{CEA_general_error}}</div>
+    </div>
+    <div class="create-edit-buttons">
+        <button type="submit"  class="btn btn-success">Update</button>
+        <button class="btn btn-danger" ng-click="cancelAutoDebit()">Cancel</button>
+    </div>
+</form>

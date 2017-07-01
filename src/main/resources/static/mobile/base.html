@@ -1,0 +1,25 @@
+<link href="css/mobile/index.css" rel="stylesheet">
+<link href="css/mobile/budget.css" rel="stylesheet">
+<link href="css/mobile/debit.css" rel="stylesheet">
+<link href="css/mobile/create_edit.css" rel="stylesheet">
+<link href="css/mobile/search.css" rel="stylesheet">
+<link href="css/mobile/reset.css" rel="stylesheet">
+<link href="css/mobile/home.css" rel="stylesheet">
+<link href="css/mobile/login.css" rel="stylesheet">
+<link href="css/mobile/register.css" rel="stylesheet">
+<link href="css/mobile/statistics.css" rel="stylesheet">
+
+<div class="header" ng-controller="loginController">
+    <div class="title">Basic Budget Builder</div>
+    <div class="index-nav">
+        <a ng-show="!authenticated" ui-sref="register" ui-sref-active="active">Register</a>
+        <a ng-show="!authenticated" ui-sref="login">Login</a>
+    </div>
+    <div class="index-nav2">
+        <a ng-show="authenticated"  href="" ng-click="logout()">Logout</a>
+    </div>
+</div>
+<div class="body" ng-controller="indexController">
+    <ui-view></ui-view>
+</div>
+<div class="footer">INFS3202 Group Project</div>

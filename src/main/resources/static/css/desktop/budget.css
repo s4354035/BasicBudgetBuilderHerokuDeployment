@@ -1,0 +1,40 @@
+.budget-panel{
+    float: right;
+    clear: both;
+    width: 100%;
+    padding: 3px;
+    height: calc(100vh - 164px);
+    overflow: auto;
+}
+.floating-box {
+    display: inline-block;
+    color: white;
+}
+.category{
+    text-align: center;
+    font-size: 90%;
+    width: 100%;
+}
+.interval{
+    float: right;
+ }
+.amount{
+    clear: both;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+.spent{
+    float: left;
+    clear: both;
+    margin-top: 3px;
+    width: 100%;
+    font-size: 70%;
+}
+.category-colour{
+    float: left;
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
+    border-radius: 7px;
+}

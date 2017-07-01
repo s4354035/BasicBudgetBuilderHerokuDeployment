@@ -1,0 +1,23 @@
+<div class="summary-panel" ng-controller="statisticsController">
+    <div class="budget-summary">
+        <div class="total-budget">Total Budget: {{totalBudget.YEAR | currency}}</div>
+    </div>
+    <div class="budget-summary">
+        <div class="remaining-budget">Remainder: {{totalRemainder.YEAR | currency}}</div>
+    </div>
+    <div class="remainder-panel">
+        <p>Week</p>
+        <p><strong>{{totalRealRemainder.WEEK | currency}}</strong></p>
+        <p>{{totalRemainder.WEEK | currency}}</p>
+    </div>
+    <div class="remainder-panel-center">
+        <p>Fortnight</p>
+        <p><strong>{{totalRealRemainder.FORTNIGHT | currency}}</strong></p>
+        <p>{{totalRemainder.FORTNIGHT | currency}}</p>
+    </div>
+    <div class="remainder-panel">
+        <p>Month</p>
+        <p><strong>{{totalRealRemainder.MONTH | currency}}</strong></p>
+        <p>{{totalRemainder.MONTH | currency}}</p>
+    </div>
+</div>

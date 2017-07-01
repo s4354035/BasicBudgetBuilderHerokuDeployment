@@ -1,0 +1,73 @@
+
+<div class="summary-panel" ng-controller="statisticsController">
+    <div class="budget-summary">
+        <div class="total-budget">Total Budget: {{totalBudget.YEAR | currency}}</div>
+        <div class="remaining-budget">Remainder: {{totalRemainder.YEAR | currency}}</div>
+    </div>
+    <div class="budget-summary">
+        <p>Current Remaining Budget</p>
+    </div>
+    <div class="remainder-panel">
+        <p>Week</p>
+        <p><strong>{{totalRealRemainder.WEEK | currency}}</strong></p>
+        <p>{{totalRemainder.WEEK | currency}}</p>
+    </div>
+    <div class="remainder-panel-center">
+        <p>Fortnight</p>
+        <p><strong>{{totalRealRemainder.FORTNIGHT | currency}}</strong></p>
+        <p>{{totalRemainder.FORTNIGHT | currency}}</p>
+    </div>
+    <div class="remainder-panel">
+        <p>Month</p>
+        <p><strong>{{totalRealRemainder.MONTH | currency}}</strong></p>
+        <p>{{totalRemainder.MONTH | currency}}</p>
+    </div>
+</div>
+<div ng-controller="statisticsController">
+    <div class="interval-nav">
+        <a class="interval-nav-tab-left active" ng-click="intervalSelect('WEEK')">Week</a>
+        <a class="interval-nav-tab-inner" ng-click="intervalSelect('FORTNIGHT')">Fortnight</a>
+        <a class="interval-nav-tab-inner" ng-click="intervalSelect('MONTH')">Month</a>
+        <a class="interval-nav-tab-inner" ng-click="intervalSelect('QUARTER')">Quarter</a>
+        <a class="interval-nav-tab-right" ng-click="intervalSelect('YEAR')">Year</a>
+    </div>
+    <div class="graph-panel">
+        <div class="graph-panel-inner">
+            <canvas ng-show="pie_show" id="pie" width="300" height="300" class="chart chart-pie"
+                    chart-data="data"
+                    chart-labels="labels"
+                    chart-series="series"
+                    chart-options="resizeOptions"
+                    chart-dataset-override="dataSetOverride">
+            </canvas>
+            <canvas ng-show="line_show" id="line" width="300" height="300" class="chart chart-line"
+                    chart-data="lineData"
+                    chart-labels="lineLabels"
+                    chart-series="lineSeries"
+                    chart-options="resizeOptions"
+                    chart-dataset-override="lineDataSetOverride">
+            </canvas>
+            <canvas ng-show="pair_show" id="bar" width="300" height="300" class="chart chart-bar"
+                    chart-data="data"
+                    chart-labels="labels"
+                    chart-series="series"
+                    chart-options="resizeOptions"
+                    chart-dataset-override="dataSetOverride">
+            </canvas>
+            <!--Not implemented due to buggy graph and time restrictions-->
+            <!--<canvas ng-show="stack_show" id="stack" width="336" height="336" class="chart chart-bar"-->
+                    <!--chart-data="stackData"-->
+                    <!--chart-labels="stacklabels"-->
+                    <!--chart-series="stackSeries"-->
+                    <!--chart-options="options"-->
+                    <!--chart-dataset-override="dataSetOverride">-->
+            <!--</canvas>-->
+        </div>
+    </div>
+    <div class="graph-nav">
+        <a class="graph-nav-tab-left active" ng-click="graphSelect('PIE')">Pie</a>
+        <a class="graph-nav-tab-inner" ng-click="graphSelect('LINE')">Line</a>
+        <a class="graph-nav-tab-right" ng-click="graphSelect('PAIR')">Pair</a>
+        <!--<a class="graph-nav-tab-right" ng-click="graphSelect('STACK')">Stack</a>-->
+    </div>
+</div>

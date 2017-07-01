@@ -1,0 +1,74 @@
+:root{
+    --main-green-light: rgb(220, 240, 230);
+    --main-green-dark: rgb(45, 75, 60);
+    --text-colour-dark: rgb(50, 111, 85);
+    --header-footer-light: rgb(210, 210, 210);
+    --header-footer-dark: rgb(50, 50, 50);
+}
+html{
+    min-width: 720px;
+    min-height: 1080px;
+    background-color: var(--main-green-light);
+}
+
+body{
+    margin:0;
+}
+h1{
+    margin:0;
+    padding-bottom:16px;
+    font-size: 125%;
+}
+h3{
+    margin:0;
+    width: 100%;
+    font-size: 110%;
+}
+.red{
+    color:#ff0000;
+}
+.header{
+    overflow: hidden;
+    height: 74px;
+    background-color: var(--header-footer-dark);
+    text-align: left;
+    color: var(--header-footer-light);
+    font-size: 250%;
+}
+.title{
+    float:left;
+    padding: 14px 0 0 16px;
+}
+.header a{
+    padding: 14px 16px 0 0;
+    float: right;
+}
+.header a:link, .header a:visited{
+    color: var(--main-green-light);
+}
+.header a:hover {
+    color: var(--header-footer-light);
+}
+.index-nav{
+    float: right;
+}
+.index-nav2{
+    float: right;
+}
+.footer{
+    clear: both;
+    position: relative;
+    height: 64px;
+    margin-top: -48px;
+    padding-top: 16px;
+    font-size: 200%;
+    background-color: var(--header-footer-dark);
+    text-align: center;
+    color: var(--header-footer-light);
+}
+.body{
+    background-color: var(--main-green-dark);
+    min-height:1586px;
+    width: 100%;
+    font-size: 400%;
+}

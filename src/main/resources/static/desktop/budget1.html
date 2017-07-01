@@ -1,0 +1,12 @@
+<div>
+    <div class="budget-panel">
+        <div class="floating-box" ng-repeat="budget in allBudgets">
+            <budget name = "budget"></budget>
+        </div>
+    </div>
+    <div class="edit-bar">
+        <button class="btn btn-success" ng-click="createBudget()">New</button>
+        <button class="btn btn-success" ng-click="editBudget()">Edit</button>
+        <button class="btn btn-danger" ng-click="deleteBudget()">Delete</button>
+    </div>
+</div>

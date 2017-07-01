@@ -1,0 +1,25 @@
+<form class="register-panel" role="form" ng-submit="registration()">
+    <h3>Register</h3>
+    <div class="register-entry">
+        <p>Username: <em class="red">{{registration_name_error}}</em></p>
+        <input class="form-control" type="text" placeholder="User" ng-model="newUser.name" />
+    </div>
+    <div class="register-entry">
+        <p>Password: <em class="red">{{registration_password_error}}</em></p>
+        <input class="form-control" type="password" placeholder="Password" ng-model="newUser.password"/>
+    </div>
+    <div class="register-entry">
+        <p>Confirm Password: <em class="red">{{registration_confirm_password_error}}</em></p>
+        <input class="form-control" type="password" placeholder="Confirm Password" ng-model="newUser.confirmPassword"/>
+    </div>
+    <div class="register-entry">
+        <p>E-mail: <em class="red">{{registration_email_error}}</em></p>
+        <input class="form-control" type="text" placeholder="user@example.com" ng-model="newUser.email" />
+    </div>
+    <div class="general-error-message">
+        <div class="alert alert-danger" ng-show="error">{{registration_general_error}}</div>
+    </div>
+    <div class="register-button">
+        <button  type="submit" class="btn btn-success">Register</button>
+    </div>
+</form>

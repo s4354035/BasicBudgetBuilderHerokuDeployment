@@ -1,0 +1,29 @@
+<form class="create-edit-panel" role="form" ng-submit="createEditDebit()">
+    <h3 ng-show="selectedPresent">Edit Debit</h3>
+    <h3 ng-show="!selectedPresent">Create Debit</h3>
+    <div class="create-edit-entry">
+        <p>Category:</p>
+    <select class="form-control dropdown" data-ng-options= "sel.categoryName for sel in allBudgets"
+            data-ng-model="sel">
+    </select>
+    </div>
+    <div class="create-edit-entry">
+        <p>Description:</p>
+        <input type="text" class="form-control" ng-model="CED_description"/>
+    </div>
+    <div class="create-edit-entry">
+        <p>Amount: <em class="red">{{CED_amount_error}}</em></p>
+        <input type="number" min="0.01" class="form-control" ng-model="CED_amount"/>
+    </div>
+    <div class="create-edit-entry">
+        <p>Date: <em class="red">{{CED_date_error}}</em></p>
+        <input type="date" class="form-control" ng-model="CED_date"/>
+    </div>
+    <div class="general-error-message">
+        <div class="alert alert-danger" ng-show="error">{{CED_general_error}}</div>
+    </div>
+    <div class="create-edit-buttons">
+        <button type="submit"  class="btn btn-success">Update</button>
+        <button class="btn btn-danger" ng-click="cancelDebit()">Cancel</button>
+    </div>
+</form>
